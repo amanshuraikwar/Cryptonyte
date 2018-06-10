@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.amanshuraikwar.cryptonyte.ui.main.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainActivityToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Cryptonyte.Toolbar.SmallCapsTitle"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mainActivitySrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainActivityRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/mainActivityLoadingLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/grey1"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/mainActivityProgressIconIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:src="@drawable/emoticon_dead_inactive_48dp"
+                tools:ignore="ContentDescription"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:animateLayoutChanges="true">
+
+                <TextView
+                    android:id="@+id/mainActivityProgressTextTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_very_small"
+                    android:paddingEnd="@dimen/padding_very_small"
+                    android:text="@string/loading_message"
+                    android:textAppearance="@style/TextAppearance.Loading"/>
+
+                <android.support.v4.widget.ContentLoadingProgressBar
+                    android:id="@+id/mainActivityMainPb"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/margin_small"
+                    style="?android:attr/progressBarStyle"
+                    android:indeterminate="true"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mainActivityRetryBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@string/retry"
+                style="@style/Widget.Cryptonyte.Button"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

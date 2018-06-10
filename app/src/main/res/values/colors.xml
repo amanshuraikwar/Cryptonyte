@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#69F0AE</color>
+    <color name="colorPrimaryDark">#4aa87a</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <!-- text colors-->
+    <color name="primaryText">#EE000000</color>
+    <color name="secondaryText">#8A000000</color>
+    <color name="disableHintText">#61000000</color>
+    <color name="divider">#1F000000</color>
+
+    <color name="primaryTextLight">#ffffffff</color>
+    <color name="secondaryTextLight">#B3ffffff</color>
+    <color name="disableHintTextLight">#80ffffff</color>
+    <color name="dividerLight">#1Fffffff</color>
+
+    <!-- white shades-->
+    <color name="white">#ffffff</color>
+    <color name="grey1">#fafafa</color>
+    <color name="grey2">#f5f5f5</color>
+    <color name="grey3">#e0e0e0</color>
+
+    <color name="grey1Trans">#bbfafafa</color>
+
+    <color name="darkGrey0">#616161</color>
+    <color name="darkGrey1">#424242</color>
+    <color name="darkGrey2">#303030</color>
+    <color name="darkGrey3">#212121</color>
+    <color name="black">#000000</color>
+
+    <color name="darkIcon">#99000000</color>
+
+    <!-- shades of green-->
+    <color name="green">#8BC34A</color>
+    <color name="lightGreen">#C5E1A5</color>
+    <color name="veryLightGreen">#F1F8E9</color>
+
+    <!-- shades of red-->
+    <color name="red">#F44336</color>
+    <color name="lightRed">#EF9A9A</color>
+    <color name="veryLightRed">#FFEBEE</color>
+
+    <!-- icon colors -->
+    <color name="activeIconLight">@color/white</color>
+    <color name="inactiveIconLight">@color/disableHintTextLight</color>
+
+    <color name="activeIcon">@color/secondaryText</color>
+    <color name="inactiveIcon">@color/disableHintText</color>
+</resources>

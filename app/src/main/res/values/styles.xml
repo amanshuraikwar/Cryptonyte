@@ -1,0 +1,169 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Cryptonyte" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- text appearance-->
+    <style
+        name="TextAppearance.Display4"
+        parent="@android:style/TextAppearance.Material.Display4">
+
+    </style>
+
+    <style
+        name="TextAppearance.Display3"
+        parent="@android:style/TextAppearance.Material.Display3">
+
+    </style>
+
+    <style
+        name="TextAppearance.Display2"
+        parent="@android:style/TextAppearance.Material.Display2">
+
+    </style>
+
+    <style
+        name="TextAppearance.Display1"
+        parent="@android:style/TextAppearance.Material.Display1">
+
+    </style>
+
+    <style
+        name="TextAppearance.Headline"
+        parent="@android:style/TextAppearance.Material.Headline">
+
+    </style>
+
+    <style
+        name="TextAppearance.Title"
+        parent="@android:style/TextAppearance.Material.Title">
+
+    </style>
+
+    <style
+        name="TextAppearance.Subhead"
+        parent="@android:style/TextAppearance.Material.Subhead">
+
+    </style>
+
+    <style
+        name="TextAppearance.Body1"
+        parent="@android:style/TextAppearance.Material.Body1">
+
+    </style>
+
+    <style
+        name="TextAppearance.Body2"
+        parent="@android:style/TextAppearance.Material.Body2">
+
+    </style>
+
+    <style
+        name="TextAppearance.Caption"
+        parent="@android:style/TextAppearance.Material.Caption">
+
+    </style>
+    
+    <style name="TextAppearance.CurrencyRank" parent="TextAppearance.Caption">
+
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <style name="TextAppearance.Dot" parent="TextAppearance.Caption">
+
+        <item name="android:fontFamily">@font/roboto_mono_bold</item>
+        <item name="android:textColor">@color/disableHintText</item>
+    </style>
+
+    <style name="TextAppearance.CurrencySymbol" parent="TextAppearance.Title">
+
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextAppearance.ToolbarTitleSmallCaps"
+        parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyName" parent="TextAppearance.Subhead">
+
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+    <style name="TextAppearance.AvatarLetter" parent="TextAppearance.Title">
+
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textColor">@color/darkIcon</item>
+    </style>
+
+    <style name="TextAppearance.CurrencyExchangeRate" parent="TextAppearance.Headline">
+
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextAppearance.Loading" parent="TextAppearance.Body2">
+
+        <item name="android:fontFamily">@font/roboto_mono_medium</item>
+        <item name="android:textColor">@color/darkIcon</item>
+    </style>
+
+    <style name="TextAppearance.PercentageChange" parent="TextAppearance.Caption">
+
+        <item name="android:fontFamily">@font/roboto_mono_medium</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <style name="TextAppearance.PercentageChangeTitle" parent="TextAppearance.Caption">
+
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textColor">@color/secondaryTextLight</item>
+    </style>
+
+    <style
+        name="TextAppearance.Button"
+        parent="@android:style/TextAppearance.Material.Widget.Button">
+
+        <item name="android:fontFamily">@font/roboto_mono_bold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/darkIcon</item>
+    </style>
+
+    <!-- widget themes-->
+    <style
+        name="Widget.Cryptonyte.Toolbar"
+        parent="@android:style/Widget.Material.Toolbar">
+
+        <item name="android:titleTextAppearance">
+            @android:style/TextAppearance.Material.Widget.ActionBar.Title</item>
+        <item name="titleTextAppearance">
+            @android:style/TextAppearance.Material.Widget.ActionBar.Title</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="Widget.Cryptonyte.Toolbar.SmallCapsTitle">
+
+        <item name="android:titleTextAppearance">@style/TextAppearance.ToolbarTitleSmallCaps</item>
+        <item name="titleTextAppearance">@style/TextAppearance.ToolbarTitleSmallCaps</item>
+    </style>
+
+    <style
+        name="Widget.Cryptonyte.Button"
+        parent="@android:style/Widget.Material.Button.Borderless">
+
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:background">@drawable/ripple_accent</item>
+        <item name="android:stateListAnimator">@animator/raise_small</item>
+    </style>
+</resources>

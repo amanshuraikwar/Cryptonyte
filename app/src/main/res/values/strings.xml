@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name_release">Cryptonyte</string>
+    <string name="app_name_debug">Cryptonyte-DEBUG</string>
+
+    <string name="dollar_sign">$</string>
+    <string name="dot">·</string>
+    <string name="retry">retry</string>
+    <string name="loading_message">Loading...</string>
+    <string name="error_message">Some error occurred!</string>
+    <string name="_1h">1H</string>
+    <string name="_24h">24H</string>
+    <string name="_7d">7D</string>
+</resources>

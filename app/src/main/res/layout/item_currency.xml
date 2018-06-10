@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:paddingBottom="@dimen/padding_normal">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/itemCurrencyRankTv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/margin_normal"-->
+            <!--android:layout_marginStart="@dimen/margin_normal"-->
+            <!--android:textAppearance="@style/TextAppearance.CurrencyRank"-->
+            <!--tools:text="1" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/margin_normal"-->
+            <!--android:textAppearance="@style/TextAppearance.Dot"-->
+            <!--android:layout_marginStart="2dp"-->
+            <!--android:layout_marginEnd="2dp"-->
+            <!--android:text="@string/dot" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/itemCurrencySymbolTv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/margin_normal"-->
+            <!--android:paddingStart="@dimen/padding_very_small"-->
+            <!--android:paddingEnd="@dimen/padding_very_small"-->
+            <!--android:background="@color/darkGrey1"-->
+            <!--android:textAppearance="@style/TextAppearance.CurrencySymbol"-->
+            <!--tools:text="BTC" />-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/itemCurrencyAvatarCv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/margin_normal"
+            app:cardBackgroundColor="@color/grey3"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/itemCurrencySymbolTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/padding_small"
+                android:paddingEnd="@dimen/padding_small"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.CurrencySymbol"
+                tools:text="BTC" />
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/itemCurrencyTrendIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/itemCurrencyExchangeRateTv"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/itemCurrencyExchangeRateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:paddingEnd="@dimen/padding_very_small"
+            android:paddingStart="@dimen/padding_very_small"
+            android:textAppearance="@style/TextAppearance.CurrencyExchangeRate"
+            tools:ignore="RelativeOverlap"
+            tools:text="$69000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/itemCurrencyNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:textAppearance="@style/TextAppearance.CurrencyName"
+            tools:text="Bitcoin" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/itemCurrency24hLl"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:orientation="horizontal"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/padding_very_small"
+                android:paddingEnd="@dimen/padding_very_small"
+                android:gravity="center"
+                android:background="@color/darkGrey0"
+                android:textAppearance="@style/TextAppearance.PercentageChangeTitle"
+                android:text="@string/_7d"/>
+
+            <TextView
+                android:id="@+id/itemCurrency7dTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_very_small"
+                android:paddingEnd="@dimen/padding_very_small"
+                android:background="@color/grey3"
+                android:textAppearance="@style/TextAppearance.PercentageChange"
+                tools:text="-0.5%"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemCurrency24hLl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/padding_very_small"
+                android:paddingEnd="@dimen/padding_very_small"
+                android:gravity="center"
+                android:background="@color/darkGrey0"
+                android:textAppearance="@style/TextAppearance.PercentageChangeTitle"
+                android:text="@string/_24h"/>
+
+            <TextView
+                android:id="@+id/itemCurrency24hTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_very_small"
+                android:paddingEnd="@dimen/padding_very_small"
+                android:background="@color/grey3"
+                android:textAppearance="@style/TextAppearance.PercentageChange"
+                tools:text="-0.5%"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
