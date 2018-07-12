@@ -13,6 +13,9 @@ import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 /**
+ * Implementation of presenter of MainActivity.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 class MainPresenter @Inject constructor(appBus: AppBus, dataManager: DataManager)
@@ -20,6 +23,7 @@ class MainPresenter @Inject constructor(appBus: AppBus, dataManager: DataManager
 
     private val TAG = Util.getTag(this)
 
+    //region parent class methods
     override fun onAttach(wasViewRecreated: Boolean) {
         super.onAttach(wasViewRecreated)
 
@@ -27,6 +31,7 @@ class MainPresenter @Inject constructor(appBus: AppBus, dataManager: DataManager
             getAllContent()
         }
     }
+    //endregion
 
     private fun getAllContent() {
 
@@ -99,6 +104,7 @@ class MainPresenter @Inject constructor(appBus: AppBus, dataManager: DataManager
                 .addToCleanup()
     }
 
+    //region contract methods
     override fun onSwipeRefresh() {
         Log.d(TAG, "onSwipeRefresh:called")
 
@@ -149,4 +155,5 @@ class MainPresenter @Inject constructor(appBus: AppBus, dataManager: DataManager
         }
         return listItems
     }
+    //endregion
 }

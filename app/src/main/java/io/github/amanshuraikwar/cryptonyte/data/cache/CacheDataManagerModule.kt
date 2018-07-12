@@ -5,6 +5,9 @@ import dagger.Module
 import javax.inject.Singleton
 
 /**
+ * Dagger Module to provide Cache Data Manager related instances.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 @Module

@@ -8,6 +8,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 /**
+ * Dagger Module to provide Network Data Manager related instances.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 03/05/18.
  */
 @Module

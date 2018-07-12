@@ -7,6 +7,10 @@ import android.view.View;
 import butterknife.ButterKnife;
 
 /**
+ * Base ViewHolder used throughout the app.
+ * Complies with the RecyclerViewAdapter that uses visitable design pattern.
+ *
+ * @author Amanshu Raikwar
  * Created by sonu on 30/6/17.
  */
 

@@ -1,6 +1,9 @@
 package io.github.amanshuraikwar.cryptonyte.data.network
 
 /**
+ * API endpoints for the remote coinmarketcap api.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 interface ApiEndpoints {

@@ -7,6 +7,9 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 /**
+ * Retrofit api interface.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 interface ApiInterface {

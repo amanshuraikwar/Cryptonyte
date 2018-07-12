@@ -5,6 +5,9 @@ import dagger.Module
 import javax.inject.Singleton
 
 /**
+ * Dagger Module to provide Data Manager related instances.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 07/03/18.
  */
 @Module

@@ -1,6 +1,9 @@
 package io.github.amanshuraikwar.cryptonyte.ui.list;
 
 /**
+ * List item used throughout the app representing a list item of a RecyclerView.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 20/12/17.
  */
 

@@ -12,6 +12,9 @@ import java.util.*
 import javax.inject.Inject
 
 /**
+ * Implementation of the Data Manager for the app.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 07/03/18.
  */
 class DataManagerImpl @Inject constructor(

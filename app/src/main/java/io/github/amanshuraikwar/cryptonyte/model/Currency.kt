@@ -3,6 +3,9 @@ package io.github.amanshuraikwar.cryptonyte.model
 import com.google.gson.annotations.SerializedName
 
 /**
+ * Model class that represents a CryptoCurrency.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 class Currency(
@@ -18,7 +21,12 @@ class Currency(
         @SerializedName("last_updated") val lastUpdated: String) {
 
     override fun toString(): String {
-        return "Currency(id='$id', name='$name', symbol='$symbol', rank='$rank', priceUsd='$priceUsd', priceBtc='$priceBtc', percentageChange1h='$percentageChange1h', percentageChange24h='$percentageChange24h', percentageChange7d='$percentageChange7d', lastUpdated='$lastUpdated')"
+        return "Currency(id='$id', name='$name', symbol='$symbol', rank='$rank'," +
+                " priceUsd='$priceUsd', priceBtc='$priceBtc'," +
+                " percentageChange1h='$percentageChange1h'," +
+                " percentageChange24h='$percentageChange24h'," +
+                " percentageChange7d='$percentageChange7d'," +
+                " lastUpdated='$lastUpdated')"
     }
 
 }

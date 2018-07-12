@@ -5,9 +5,11 @@ import dagger.android.DaggerApplication;
 import io.github.amanshuraikwar.cryptonyte.di.DaggerAppComponent;
 
 /**
+ * Application Class.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 18/12/17.
  */
-
 public class MyApp extends DaggerApplication {
 
     @Override

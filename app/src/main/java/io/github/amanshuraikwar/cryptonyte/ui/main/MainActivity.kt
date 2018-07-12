@@ -1,33 +1,29 @@
 package io.github.amanshuraikwar.cryptonyte.ui.main
 
-import android.app.Activity
-import android.content.Context
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.recyclerview.extensions.ListAdapter
-import android.support.v7.util.DiffUtil
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import io.github.amanshuraikwar.cryptonyte.R
-import io.github.amanshuraikwar.cryptonyte.model.Currency
 import io.github.amanshuraikwar.cryptonyte.ui.base.BaseActivity
 import io.github.amanshuraikwar.cryptonyte.ui.list.ListItem
 import io.github.amanshuraikwar.cryptonyte.ui.list.ListItemTypeFactory
 import io.github.amanshuraikwar.cryptonyte.ui.list.RecyclerViewAdapter
 import io.github.amanshuraikwar.cryptonyte.util.Util
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_currency.view.*
 
+/**
+ * Launcher activity of the application.
+ *
+ * @author Amanshu Raikwar
+ */
 class MainActivity : BaseActivity<MainContract.View, MainContract.Presenter>(), MainContract.View {
 
     private val TAG = Util.getTag(this)
 
+    /**
+     * RecyclerView adapter to display crypto currencies.
+     */
     private val adapter = RecyclerViewAdapter(this, ListItemTypeFactory())
 
     override fun onCreate(savedInstanceState: Bundle?) {

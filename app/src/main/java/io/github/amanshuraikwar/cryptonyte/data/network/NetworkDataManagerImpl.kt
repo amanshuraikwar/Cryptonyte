@@ -6,9 +6,12 @@ import io.github.amanshuraikwar.cryptonyte.util.Util
 import javax.inject.Inject
 
 /**
+ * Implementation of Network Data Manager.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
-class NetworkDataDataManagerImpl @Inject constructor(private val apiInterface: ApiInterface) : NetworkDataManager {
+class NetworkDataManagerImpl @Inject constructor(private val apiInterface: ApiInterface) : NetworkDataManager {
 
     private val TAG = Util.getTag(this)
 

@@ -9,6 +9,9 @@ import io.reactivex.Observable
 import javax.inject.Inject
 
 /**
+ * Cache implementation for all Currencies fetched from the remote api.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 class AllCurrenciesCache @Inject constructor(private val networkDataManager: NetworkDataManager)

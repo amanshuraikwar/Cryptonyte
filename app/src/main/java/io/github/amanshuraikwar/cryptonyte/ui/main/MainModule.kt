@@ -7,6 +7,9 @@ import io.github.amanshuraikwar.cryptonyte.di.ActivityContext
 import io.github.amanshuraikwar.cryptonyte.di.ActivityScope
 
 /**
+ * Dagger Module to provide MainActivity related instances.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 @Module abstract class MainModule {

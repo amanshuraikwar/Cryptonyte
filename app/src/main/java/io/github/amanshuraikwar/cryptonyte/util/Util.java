@@ -1,6 +1,9 @@
 package io.github.amanshuraikwar.cryptonyte.util;
 
 /**
+ * Utility class for the app.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 07/03/18.
  */
 

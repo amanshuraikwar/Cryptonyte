@@ -6,6 +6,9 @@ import io.github.amanshuraikwar.cryptonyte.ui.base.BaseView
 import io.github.amanshuraikwar.cryptonyte.ui.list.ListItem
 
 /**
+ * MVP contract of MainActivity.
+ *
+ * @author Amanshu Raikwar
  * Created by amanshuraikwar on 30/04/18.
  */
 interface MainContract {
@@ -20,6 +23,7 @@ interface MainContract {
         fun showLoading()
         fun hideLoading()
     }
+
     interface Presenter : BasePresenter<View> {
         fun onSwipeRefresh()
         fun onRetryBtnClick()
